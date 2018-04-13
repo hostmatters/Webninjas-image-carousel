@@ -3,7 +3,7 @@
 Plugin Name: Webninjas-image-carousel
 
 Description: Rotate sidebar HTML
-Version: 1.2
+Version: 1.3
 Author: Niels
 Author URI: www.hostmatters.nl
 License: 
@@ -15,10 +15,10 @@ if(	!defined('ABSPATH'))
 	die('You are not allowed to call this page directly.');
 }
 
-class img_rotate_plugin extends WP_Widget {
+class webninjas_image_carousel extends WP_Widget {
 	
-	function img_rotate_plugin() {
-		parent::__construct(false, $name = __('Image carousel', 'img_rotate_plugin') );
+	function webninjas_image_carousel() {
+		parent::__construct(false, $name = __('Webninjas: image carousel', 'webninjas_image_carousel') );
 	}
 
 	function widget($args, $instance) 
@@ -68,7 +68,7 @@ class img_rotate_plugin extends WP_Widget {
 	}
 }
 
-add_action('widgets_init', create_function('', 'return register_widget("img_rotate_plugin");'));
+add_action('widgets_init', create_function('', 'return register_widget("webninjas_image_carousel");'));
 
 
 	/* Update from github if any */
