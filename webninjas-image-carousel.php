@@ -3,7 +3,7 @@
 Plugin Name: Webninjas-image-carousel
 
 Description: Rotate sidebar HTML
-Version: 1.2
+Version: 1.3
 Author: Niels
 Author URI: www.hostmatters.nl
 License: 
